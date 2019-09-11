@@ -13,7 +13,7 @@ var (
 
 func init() {
 	conn, _ = client.NewHTTPClient(client.HTTPConfig{
-		Addr:     "http://10.0.52.130:9000",
+		Addr:     "http://:8000",
 		Username: "",
 		Password: "",
 	})
