@@ -1,0 +1,35 @@
+output:
+  - outtype: influxdb
+    addr: :9000
+    worker: 3
+    dbname: xx
+    name:   xx
+
+input:
+  name: xx
+  brokerlist:
+    - xx:9092
+  topic:
+    - xx
+
+
+  
+filter:
+  worker: 5
+  table:
+    - xx1
+    - xx2
+  taglist:
+    xx: t
+    xx: $oid
+  fieldlist:
+    xx: t
+  time:
+    - utime
+  timeshift: 0
+  timeunit: 1 #1 秒; 0 毫秒
+  redishost: xx:6379
+  redispass: xx
+  redisttl: 1209600
+  mongo: xx:xx@xx
+
